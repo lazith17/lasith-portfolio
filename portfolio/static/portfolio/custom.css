@@ -1,0 +1,39 @@
+.navbar-nav .nav-link {
+    color: rgb(243, 238, 238) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar {
+    overflow: hidden;
+    /*background-color: #333;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(105, 105, 105, 0.73);
+}
+
+.navbar-brand{
+    color: white!important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#blogtitle {
+    font-size: 6rem;
+}
+
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 2rem;
+    }
+
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+}

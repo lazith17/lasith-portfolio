@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="{% static "portfolio/logo_trans.png" %}">
+
+    <title>Lasith Herath</title>
+</head>
+
+<body>
+
+<nav id="topNav" class="navbar navbar-expand-md navbar-light navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static "portfolio/logo_trans.png" %}" width="30" height="30" class="d-inline-block align-top"
+                 alt="Nick's Logo">
+            <span>Lasith Herath</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% static "portfolio/Lasith_CV_Online.pdf" %}">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.fiverr.com/lasith15" target="_blank">Fiverr</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.freelancer.com/u/lasith15" target="_blank">Freelancer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.shutterstock.com/g/Lasith17" target="_blank">Shutterstock</a>
+                </li>
+                <li>
+                    <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static "portfolio/jquery-3.4.1.slim.min.js" %}"></script>
+<script src="{% static "portfolio/popper.min.js" %}"></script>
+<script src="{% static "portfolio/bootstrap.min.js" %}"></script>
+</body>
+
+</html>
