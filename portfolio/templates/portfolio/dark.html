@@ -1,0 +1,32 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block content %}
+
+    <link id="mystylesheet" rel="stylesheet" type="text/css" href="{% static "portfolio/dark.css" %}">
+
+    <script type="text/javascript">
+        var setTheme = localStorage.getItem('theme')
+        console.log('theme:', setTheme)
+
+        if (setTheme == null) {
+            swapStyle({% static "portfolio/light.css" %})
+        } else {
+            swapStyle(setTheme)
+        }
+
+        function swapStyle(sheet) {
+            document.getElementById('mystylesheet').href = sheet
+            localStorage.setItem('theme', sheet)
+        }
+    </script>
+
+    <div id="box">
+        <img id="profile_pic" src="{% static 'portfolio/las.jpg' %}">
+        <h2>Hi, I m Lasith !</h2>
+        <p>I love coding, doing research and sharing what I learn with others :)</p>
+        <hr>
+        <button class="btn btn-light" onclick="swapStyle({% static "portfolio/light.css" %})">Light Mode</button>
+        <button class="btn btn-dark" onclick="swapStyle({% static "portfolio/dark.css" %})">Dark Mode</button>
+    </div>
+{% endblock %}
+
