@@ -6,10 +6,6 @@
     color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.body{
-    padding-top: 50px;
-    margin-top: 50px;
-}
 
 .navbar {
     overflow: hidden;
@@ -21,12 +17,14 @@
     background-color: rgba(105, 105, 105, 0.73);
 }
 
-.navbar-brand{
-    color: white!important;
+.navbar-brand {
+    color: white !important;
 }
 
 body {
+    background-color: rgb(36, 41, 46) !important;
     font-family: 'Lato', sans-serif;
+    padding-top: 60px;
 }
 
 #blogtitle {
@@ -42,41 +40,36 @@ body {
         font-size: 5rem;
     }
 }
-
 /*Dark*/
-body{
-	background-color: rgb(36, 41, 46) !important;
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6{
-	color: #fff;
+p, span, small {
+    color: #eaeaea;
 }
 
-p, span, small{
-	color: #eaeaea;
-}
-
-#box{
+#box {
     /*width: 300px;*/
-	margin: 0 auto;
-	margin-top: 100px;
-	border: 2px solid rgb(24, 26, 31);
-	border-radius: 5px;
-	text-align: center;
-	padding: 20px;
-	background-color: rgb(49, 54, 63) !important;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid rgb(24, 26, 31);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(49, 54, 63) !important;
 }
 
-#profile_pic{
-	display: block;
-	border-radius: 50%;
-	margin: 10px auto;
-	width: 200px;
-	border: 2px solid rgb(24, 26, 31);
+#profile_pic {
+    display: block;
+    border-radius: 50%;
+    margin: 10px auto;
+    width: 200px;
+    border: 2px solid rgb(24, 26, 31);
 
 }
 
-hr{
-	margin: 20px;
-	background-color: #eaeaea;
+hr {
+    margin: 20px;
+    background-color: #eaeaea;
 }
